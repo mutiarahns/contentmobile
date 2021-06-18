@@ -459,7 +459,7 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     width: 80,
     height: 80,
-    resizeMode: 'contain',
+    resizeMode: 'cover',
     marginBottom: 15,
   },
   name: {

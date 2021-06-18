@@ -57,7 +57,9 @@ const Home = ({navigation}) => {
     return (
       <TouchableOpacity opacity={0.2} onPress={() => handleShowDetail(item)}>
         <View style={styles.row}>
-          <Image source={imgSource} style={styles.avatar} />
+          <View style={styles.avatar}>
+            <Image source={imgSource} style={styles.avatar} />
+          </View>
           <Text
             style={styles.name}>{`${item.firstName} ${item.lastName}`}</Text>
         </View>
@@ -369,7 +371,9 @@ const styles = StyleSheet.create({
     borderColor: '#aeaeae',
     width: 60,
     height: 60,
-    resizeMode: 'contain',
+    resizeMode: 'cover',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   name: {
     fontSize: 15,
